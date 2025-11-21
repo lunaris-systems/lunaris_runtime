@@ -14,7 +14,7 @@ use tracing::*;
 // Force linking of statically-registered plugins via the linker crate.
 // This ensures inventory submissions (e.g., GUI plugins like Profiler) are discovered.
 #[allow(unused_imports)]
-use linker as _;
+use lunaris_linker as _;
 use wgpu::{DeviceDescriptor, Instance, RequestAdapterOptions};
 
 use crate::{app::LunarisApp, logging::init_log_global, signals::register_hooks};
